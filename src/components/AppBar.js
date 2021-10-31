@@ -14,12 +14,12 @@ import { logoutAction } from "../redux/actions/authActions";
 
 const useStyles = makeStyles(() => ({
   appBar: {
-    backgroundColor: "#e8ede1",
+    backgroundColor: "#523762",
     marginBottom: 10,
   },
-  title: { flex: 1, marginLeft: 60, color: "black" },
+  title: { flex: 1, marginLeft: 60, color: "white" },
   buttonStyles: {
-    color: "black",
+    color: "white",
     margin: "0 6px 0",
     display: "inline-block",
   },
@@ -44,7 +44,7 @@ export default function AppBarPrimary() {
     lastName,
     address,
   } = useSelector((state) => state.auth);
-
+  // console.log(role, authenticated);
   const handleLogout = () => {
     dispatch(logoutAction(history));
   };
@@ -54,7 +54,7 @@ export default function AppBarPrimary() {
       <Toolbar>
         <Link to="/" className={classes.title}>
           <Typography variant="h6" noWrap>
-            <span className={classes.name}>FoodHub</span>
+            <span className={classes.name}>FoodPanda</span>
           </Typography>
         </Link>
         {authenticated ? (
@@ -100,7 +100,7 @@ export default function AppBarPrimary() {
               <Button className={classes.buttonStyles}>Login</Button>
             </Link>
             <Link to="/register">
-              <Button className={classes.buttonStyles} variant="outlined">
+              <Button className={classes.buttonStyles} variant="">
                 Register
               </Button>
             </Link>

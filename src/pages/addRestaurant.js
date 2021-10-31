@@ -52,6 +52,7 @@ export default function AddRestaurant() {
 
   const handleFileSelect = (event) => {
     setImages(event.target.files);
+    // console.log(event.target.files[0]);
   };
 
   //error variables

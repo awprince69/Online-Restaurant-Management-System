@@ -254,13 +254,13 @@ const Cart = (props) => {
                     <Typography variant="body2" color="textPrimary">
                       <div className={classes.spaceTypo}>
                         <span>Initial amount</span>
-                        <span>Rs. {price}</span>
+                        <span>BDT. {price}</span>
                       </div>
                       <br />
                       <br />
                       <div className={classes.spaceTypo}>
                         <span>Delivery Charge</span>
-                        <span>Rs. {deliveryCharge}</span>
+                        <span>BDT. {deliveryCharge}</span>
                       </div>
                       <br />
                     </Typography>
@@ -276,7 +276,7 @@ const Cart = (props) => {
                           <div className={classes.spaceTypo}>
                             <span>{item.itemId.title}</span>
                             <span>
-                              Rs.
+                              BDT.
                               {item.itemId.price} x {item.quantity}
                             </span>
                           </div>
@@ -288,7 +288,7 @@ const Cart = (props) => {
                   <Typography gutterBottom variant="h5" noWrap>
                     <div className={classes.spaceTypo}>
                       <span>Grand Total</span>
-                      <span>Rs. {price + deliveryCharge}</span>
+                      <span>BDT. {price + deliveryCharge}</span>
                     </div>
                     <br />
                   </Typography>
